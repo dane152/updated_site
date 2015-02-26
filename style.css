@@ -1,0 +1,387 @@
+@-webkit-keyframes myfirst {
+    0%   {background: red;}
+    25%  {background: yellow;}
+    50%  {background: blue;}
+    100% {background: green;}
+}
+
+/* Standard syntax */
+@keyframes myfirst {
+    0%   {background: red;}
+    25%  {background: yellow;}
+    50%  {background: blue;}
+    100% {background: green;}
+}
+
+body{background: rgb(108,108,108); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(108,108,108,1) 0%, rgba(176,176,176,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(108,108,108,1)), color-stop(100%,rgba(176,176,176,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(108,108,108,1) 0%,rgba(176,176,176,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(108,108,108,1) 0%,rgba(176,176,176,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(108,108,108,1) 0%,rgba(176,176,176,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(108,108,108,1) 0%,rgba(176,176,176,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6c6c6c', endColorstr='#b0b0b0',GradientType=0 ); /* IE6-9 */
+}
+
+
+
+.topBar{
+		background: rgba(219,219,219,1);
+		background: -moz-linear-gradient(left, rgba(219,219,219,1) 0%, rgba(227,227,227,1) 53%, rgba(237,237,237,1) 100%);
+		background: -webkit-gradient(left top, right top, color-stop(0%, rgba(219,219,219,1)), color-stop(53%, rgba(227,227,227,1)), color-stop(100%, rgba(237,237,237,1)));
+		background: -webkit-linear-gradient(left, rgba(219,219,219,1) 0%, rgba(227,227,227,1) 53%, rgba(237,237,237,1) 100%);
+		background: -o-linear-gradient(left, rgba(219,219,219,1) 0%, rgba(227,227,227,1) 53%, rgba(237,237,237,1) 100%);
+		background: -ms-linear-gradient(left, rgba(219,219,219,1) 0%, rgba(227,227,227,1) 53%, rgba(237,237,237,1) 100%);
+		background: linear-gradient(to right, rgba(219,219,219,1) 0%, rgba(227,227,227,1) 53%, rgba(237,237,237,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dbdbdb', endColorstr='#ededed', GradientType=1 );
+	width: 100%;
+	height:50px;
+	display:inline-block;
+}
+.topBarCart{
+	height:50px;
+	width:350px;
+	float:right;
+
+}
+
+.topBarCartIcon{
+			float:left;
+			background-image:url(images/cart.png);
+			width:50px;height:50px;}
+.topBarCartIcon:hover{
+			background-image:url(images/cartHover.png);
+			cursor:pointer;
+}
+.topBarYourAcct{
+	margin-top:10px;
+	margin-left:5px;
+	padding-top:px;
+	height:32px;
+	width:66px;
+	text-align:center;
+	float:left;
+	font-family:Arial;
+	font-size:.8em;
+	background: rgba(209,209,209,1);
+background: -moz-radial-gradient(center, ellipse cover, rgba(209,209,209,1) 0%, rgba(201,201,201,0.75) 47%, rgba(194,194,194,0.46) 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(209,209,209,1)), color-stop(47%, rgba(201,201,201,0.75)), color-stop(100%, rgba(194,194,194,0.46)));
+background: -webkit-radial-gradient(center, ellipse cover, rgba(209,209,209,1) 0%, rgba(201,201,201,0.75) 47%, rgba(194,194,194,0.46) 100%);
+background: -o-radial-gradient(center, ellipse cover, rgba(209,209,209,1) 0%, rgba(201,201,201,0.75) 47%, rgba(194,194,194,0.46) 100%);
+background: -ms-radial-gradient(center, ellipse cover, rgba(209,209,209,1) 0%, rgba(201,201,201,0.75) 47%, rgba(194,194,194,0.46) 100%);
+background: radial-gradient(ellipse at center, rgba(209,209,209,1) 0%, rgba(201,201,201,0.75) 47%, rgba(194,194,194,0.46) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1d1d1', endColorstr='#c2c2c2', GradientType=1 );
+}
+.topBarYourAcct:hover{
+	font-size:.8em;
+	background-color:rgba(3, 148, 144, 0.36);
+	border-radius:4px;
+}
+.wishListCSSfix{
+	margin-top:10px;
+	margin-left:6px;
+	padding-top:2px;
+	height:26px;
+	width:66px;
+	text-align:center;
+	float:left;
+	font-family:Arial;
+	font-size:12px;
+	line-height: 12px;
+	border-radius:4px;
+	background: rgba(209,209,209,1);
+background: -moz-radial-gradient(center, ellipse cover, rgba(209,209,209,1) 0%, rgba(201,201,201,0.75) 47%, rgba(194,194,194,0.46) 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(209,209,209,1)), color-stop(47%, rgba(201,201,201,0.75)), color-stop(100%, rgba(194,194,194,0.46)));
+background: -webkit-radial-gradient(center, ellipse cover, rgba(209,209,209,1) 0%, rgba(201,201,201,0.75) 47%, rgba(194,194,194,0.46) 100%);
+background: -o-radial-gradient(center, ellipse cover, rgba(209,209,209,1) 0%, rgba(201,201,201,0.75) 47%, rgba(194,194,194,0.46) 100%);
+background: -ms-radial-gradient(center, ellipse cover, rgba(209,209,209,1) 0%, rgba(201,201,201,0.75) 47%, rgba(194,194,194,0.46) 100%);
+background: radial-gradient(ellipse at center, rgba(209,209,209,1) 0%, rgba(201,201,201,0.75) 47%, rgba(194,194,194,0.46) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1d1d1', endColorstr='#c2c2c2', GradientType=1 );
+}
+.wishListCSSfix:hover{
+	background-color:rgba(3, 148, 144, 0.36);
+}
+
+.mainNav{
+	width:100%;
+	height:30px;
+	background-color:black;
+	display:inline-block;
+}
+
+nav ul{
+	float:right;
+	margin-top:0px;
+}
+.search{
+	float:left;
+	margin-top:5px;
+	margin-left:10px;
+}
+.searchBox {
+   width: 167px;
+   height: 30px;
+   border: solid 2px gray ;
+   border-right:none;
+   padding: 2px;
+   border-top-left-radius: 5px;
+   border-bottom-left-radius: 5px;
+   font-size: 12px;
+   box-shadow: -1px 1px 9px 6px #9C9C9C;
+   background-color: #FFFFFF;
+   outline: none;
+   color: #474747;
+  }
+
+
+.submitButton{
+	height:40px;
+	background-color: black;
+	border:black;
+	border-top-right-radius:8px;
+	border-bottom-right-radius:8px;
+	border-left:none;
+	margin-left:-3px;
+	box-shadow: 6px 1px 7px 3px #9C9C9C;
+	color: #FFF;
+	cursor:pointer;
+}
+.logoImage{
+	background-image:url(images/logo.png);
+	background-repeat: no-repeat;
+	margin-left:220px;
+	width:160px;
+	height:50px;
+	display:inline-block;
+}
+.logoImage:hover{
+	background-image:url(images/logoHover.png);
+	cursor:pointer;
+}
+
+
+
+.navItems li{
+	text-align:center;
+	padding-top:4px;
+	font-family: 'Open Sans', sans-serif;
+	
+	
+}
+
+.navItems{
+	width:160px;
+	height:30px;
+	margin-left:0px;
+	margin-top:0px;
+	margin-bottom:0px;
+	display:inline;
+	float:left;
+	list-style-type:none;
+	background-color: black;
+	color:#FFFFFF;
+}
+.navItems:hover{
+	
+	background-color: #319491;
+	
+	color:#FFF;
+}
+
+.sidebarWrapper{
+	height:420px;
+	width:170px;
+	display:block;
+	background-color:gray;
+	float:left;
+	}
+.sidebarItems{
+	font-family: 'Open Sans', sans-serif;
+	width:169px;
+	height: 26px;
+	margin-top:0px;
+	text-align: center;
+	padding-top:4px;
+	border-bottom:1px solid #dbdbdb;
+	color:#FFF;
+	background-color:black;
+		/*background: rgba(43,42,43,1);
+		background: -moz-radial-gradient(center, ellipse cover, rgba(43,42,43,1) 0%, rgba(0,0,0,1) 100%);
+		background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(43,42,43,1)), color-stop(100%, rgba(0,0,0,1)));
+		background: -webkit-radial-gradient(center, ellipse cover, rgba(43,42,43,1) 0%, rgba(0,0,0,1) 100%);
+		background: -o-radial-gradient(center, ellipse cover, rgba(43,42,43,1) 0%, rgba(0,0,0,1) 100%);
+		background: -ms-radial-gradient(center, ellipse cover, rgba(43,42,43,1) 0%, rgba(0,0,0,1) 100%);
+		background: radial-gradient(ellipse at center, rgba(43,42,43,1) 0%, rgba(0,0,0,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b2a2b', endColorstr='#000000', GradientType=1 );
+		*/
+	list-style-type: none;
+	cursor:pointer;
+}
+
+.sidebarItems:hover{
+	font-family: 'Open Sans', sans-serif;
+	width:169px;
+	height: 26px;
+	margin-top:0px;
+	text-align: center;
+	padding-top:4px;
+	background-color:#319491;
+	color:white;
+	list-style-type: none;
+	
+
+}
+.sidebarWrapper ul{
+	margin-left:-40px;
+	margin-top:0px;
+
+	
+}
+textarea{	height:140px;
+			width:180px;
+			}
+.container{
+	width:100%;
+	height:100%;
+	display:inline-block;
+	
+
+}
+
+.slideshow{
+	width:700px;
+	height:300px;
+	margin-left:15px;
+	margin-top:8px;
+	padding-top:0px;
+	background-color: red;
+	display:inline-block;
+	color:#FFF;
+	font-size:20pt;
+	-webkit-animation: myfirst 7s; /* Chrome, Safari, Opera */
+    animation: myfirst 7s;
+}
+.saleBanner{
+	width:70%;
+	min-width:468px;
+	height:60px;
+	margin-top:8px;
+	margin-left:35%;
+	background-image:url(images/saleAd.png);
+	background-repeat: no-repeat;
+}
+#ourFocus{
+	margin:auto;
+	width:30%;
+	height:80px;
+}
+#ourFocus a{text-decoration: none;}
+
+.categoryGalleryContainer{
+	background-color:;
+	width:900px;
+	height:400px;
+	margin:0 auto;
+}
+/*individual categories  */
+.categoryGalleryBass{
+	float: left;
+	margin-left:6px;
+	margin-top:2px;
+	margin-bottom:3%;
+	height:90%;
+	width:32%;
+	background-image:url(images/bassGRAY.png);
+	border-radius:27px;
+	
+}
+.categoryGalleryBass:hover{
+	background-image:url(images/bass.png);
+}
+
+
+.categoryGallerySaltwater{
+	float: left;
+	margin-left:6px;
+	margin-top:2px;
+	margin-bottom:3%;
+	height:90%;
+	width:32%;
+	background-image:url(images/SaltwaterGRAY.png);
+	border-radius:27px;
+	
+}
+.categoryGallerySaltwater:hover{
+	background-image:url(images/Saltwater.png);
+}
+.categoryGalleryTrout{
+	float: left;
+	margin-left:6px;
+	margin-top:2px;
+	margin-bottom:3%;
+	height:90%;
+	width:32%;
+	background-image:url(images/troutGRAY.png);
+	border-radius:27px;
+}
+.categoryGalleryTrout:hover{
+background-image:url(images/trout.png);
+}
+
+ .GalleryFishWrapper{
+ 	width:100%;
+ 	height:200px;
+ 	
+ 	margin:0 auto;
+ }
+ .GalleryHuntWrapper{
+ 	width:100%;
+ 	height:200px;
+ 	margin:0 auto;
+ }
+
+/*individual categories  */
+.categoryGalleryDeer{
+	float: left;
+	margin-left:6px;
+	margin-top:2px;
+	margin-bottom:3%;
+	height:90%;
+	width:32%;
+	background-image:url(images/deerGRAY.png);
+	border-radius:27px;
+	
+}
+.categoryGalleryDeer:hover{
+	background-image:url(images/deer.png);
+}
+
+
+.categoryGalleryTurkey{
+	float: left;
+	margin-left:6px;
+	margin-top:2px;
+	margin-bottom:3%;
+	height:90%;
+	width:32%;
+	background-image:url(images/turkeyGRAY.png);
+	border-radius:27px;
+	
+}
+.categoryGalleryTurkey:hover{
+	background-image:url(images/turkey.png);
+}
+.categoryGalleryWaterfowl{
+	float: left;
+	margin-left:6px;
+	margin-top:2px;
+	margin-bottom:3%;
+	height:90%;
+	width:32%;
+	background-image:url(images/troutGRAY.png);
+	border-radius:27px;
+}
+.categoryGalleryWaterfowl:hover{
+background-image:url(images/trout.png);
+}
+
